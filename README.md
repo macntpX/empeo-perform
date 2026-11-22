@@ -37,7 +37,7 @@ Organizations moving off spreadsheets and email hit four structural failures eve
 | **2. Probation New Hires** | Employees marked `PROBATION` (e.g., Arthit J.) are flagged `Probation (Exempt)` and **excluded from team Mean/SD** so they never distort team calibration. | HR → Calibration / Manager → Evaluations |
 | **3. Incomplete KPI Weights** | If a manager sets KPI weights summing to `≠ 100%` (e.g., 60%), the engine **auto-reweights proportionally** and displays a `WEIGHT_MISMATCH` warning badge instead of crashing or under-scoring. | Manager → Team Goals & OKRs |
 | **4. Missing Self-Review** | If an employee skips self-assessment, managers can still evaluate them with a clear `Self-Review Missing` indicator. | Manager → Team Evaluations |
-| **5. Large Self vs. Manager Gap** | When `|Self - Manager| ≥ 1.0`, the UI flags `SCORE_GAP` to prompt concrete examples before the 1-on-1 review conversation. | Manager → Ploypailin K. / HR → Calibration |
+| **5. Large Self vs. Manager Gap** | When the gap between Self and Manager scores is `≥ 1.0`, the UI flags `SCORE_GAP` to prompt concrete examples before the 1-on-1 review conversation. | Manager → Ploypailin K. / HR → Calibration |
 | **6. Premature Score Leak** | Employees can view goals and submit self-reviews, but **official calibrated scores remain hidden** until HR explicitly clicks **Publish Results**. | Switch to Nadia Srisai before & after HR Publish |
 | **7. Mid-Cycle Criteria Changes** | HR can **Add / Edit / Delete Core Competencies** in **Cycle & Policies** (auto-synced across all forms & Audit Trail), with **Phase Guardrails**: open in `GOAL_SETTING`, warning banner during active reviews, and **locked** once `PUBLISHED`. | HR → Cycle & Policies → Evaluation Criteria |
 
